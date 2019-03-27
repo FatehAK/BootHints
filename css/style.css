@@ -1,5 +1,5 @@
 .alert {
-    width: 500px;
+    max-width: 500px;
 }
 
 /* for validation-tooltip to work*/
