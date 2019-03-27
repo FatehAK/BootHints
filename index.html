@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap Reference</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="#" class="navbar-brand">
+                <img src="img/me.jpeg" class="rounded-circle mx-2" width="30" height="30">Fateh</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Option 1</a>
+                            <a href="#" class="dropdown-item">Option 2</a>
+                            <a href="#" class="dropdown-item">Option 3</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-3" placeholder="Search..">
+                    <button class="btn btn-outline-primary " type="submit">Submit</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="container">
+        <h4 class="pb-3 pt-3 text-center header">Bootstrap Reference</h4>
+        <div class="carousel" id="myCarousel" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li href="#myCarousel" class="active" data-slide-to="0"></li>
+                <li href="#myCarousel" data-slide-to="1"></li>
+                <li href="#myCarousel" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="500">
+                    <img src="img/img2.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Slide 1</h3>
+                        <p>This is first slide</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="500">
+                    <img src="img/img1.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Slide 2</h3>
+                        <p>This is second slide</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="500">
+                    <img src="img/img3.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Slide 3</h3>
+                        <p>This is third slide</p>
+                    </div>
+                </div>
+                <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- VERTICAL SCROLL -->
+    <div class="container">
+        <h5 class="index mt-5 mb-4" id="scrlTarget">List of Components</h5>
+        <ul class="component list-unstyled"></ul>
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <button class="btn" id="scrlButton">▲</button>
+
+    <!-- NAV -->
+    <div class="container">
+        <h5 class="mt-4 mb-4" id="Nav">Nav</h5>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+
+        <ul class="nav nav-tabs mt-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+
+        <ul class="nav nav-pills nav-justified mt-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+
+        <ul class="nav mt-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 3</a>
+            </li>
+        </ul>
+
+        <h6 class="mt-3 mb-3">Tabbed Nav</h6>
+        <ul class="nav nav-pills mt-3">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#link1">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#link2">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#link3">Link 3</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane active show" id="link1">Content for Link 1</div>
+            <div class="tab-pane fade" id="link2">Content for Link 2</div>
+            <div class="tab-pane fade" id="link3">Content for Link 3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-pills flex-column mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#link4">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#link5">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#link6">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content mt-3">
+                    <div class="tab-pane active show" id="link4">Cupcake ipsum dolor sit amet. Biscuit sesame snaps croissant danish cupcake. Donut lollipop cotton candy
+                        topping icing macaroon danish tart. Tootsie roll cotton candy donut tiramisu chocolate cake caramels.</div>
+                    <div class="tab-pane fade" id="link5">Marzipan marzipan croissant dessert icing chocolate cake jelly cupcake. Croissant lemon drops liquorice caramels ice cream
+                        tootsie roll. Carrot cake icing cheesecake jelly-o marshmallow tiramisu sweet roll cake.</div>
+                    <div class="tab-pane fade" id="link6">Jelly beans bonbon chocolate topping cheesecake cheesecake cupcake jelly beans carrot cake. Biscuit carrot cake pastry
+                        chocolate cake. Chocolate cake fruitcake jelly lollipop ice cream sweet roll tiramisu.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERT -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Alerts">Alerts</h5>
+        <div class="alert alert-primary alert-dismissable fade show">
+            <h5 class="alert-heading">Alert Heading<button class="close" data-dismiss="alert">&times;</button></h5>
+            <p>This is a simple alert with <a href="#" class="alert-link">Example Link</a></p>
+        </div>
+    </div>
+
+    <!-- BADGES -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Badges">Badges</h5>
+        <h6>Example Heading <span class="badge badge-primary">badge</span></h6>
+        <button class="btn btn-outline-success">Notifications <span class="badge badge-light">4</span></button>
+        <span class="badge badge-pill badge-danger">danger</span>
+        <a href="#" class="badge badge-info">Click me!!</a>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Buttons">Buttons</h5>
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-outline-success">primary-outline</button>
+        <button type="button" class="btn btn-link">link</button>
+        <a class="btn btn-info">anchor button</a>
+        <button type="button" class="btn btn-dark btn-lg mb-2">large button</button>
+        <button type="button" class="btn btn-warning btn-sm">small button</button>
+        <button type="button" class="btn btn-dark active">active button</button>
+        <button type="button" class="btn btn-dark" disabled>disabled button</button>
+        <button type="button" class="btn btn-warning" data-toggle="button">toggle button</button>
+        <button type="button" class="btn btn-outline-danger btn-block mb-2">block button</button>
+
+        <h6 class="mt-3">Button Group</h6>
+        <div class="btn-group btn-group-sm">
+            <button class="btn btn-info">first</button>
+            <button class="btn btn-info">second</button>
+            <button class="btn btn-info">third</button>
+        </div>
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-info">first</button>
+            <button class="btn btn-info">second</button>
+            <button class="btn btn-info">third</button>
+        </div>
+        <div class="btn-group btn-group-vertical">
+            <button class="btn rounded btn-info">first</button>
+            <button class="btn rounded btn-info">second</button>
+            <button class="btn rounded btn-info">third</button>
+        </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <button class="btn btn-info">first</button>
+            <button class="btn btn-info">second</button>
+            <button class="btn btn-info">third</button>
+        </div>
+    </div>
+
+    <!-- SPINNERS-->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Spinners">Spinners</h5>
+        <div class="spinner-border"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-grow"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-border spinner-border-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+        <button class="btn btn-success">
+            <span class="spinner-border spinner-border-sm"></span>
+            <span>Loading</span>
+        </button>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Progress-Bars">Progress bars</h5>
+        <div class="progress">
+            <div class="progress-bar w-50">50%</div>
+        </div><br />
+        <div class="progress">
+            <div class="progress-bar bg-success w-25">25%</div>
+            <div class="progress-bar bg-warning w-50">50%</div>
+            <div class="progress-bar bg-danger w-25">25%</div>
+        </div><br />
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-75">75%</div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMBS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Breadrumbs">Breadcrumbs</h5>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">A</a></li>
+            <li class="breadcrumb-item"><a href="#">B</a></li>
+            <li class="breadcrumb-item"><a href="#">C</a></li>
+            <li class="breadcrumb-item active">D</li>
+        </ul>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Pagination">Pagination</h5>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+        <ul class="pagination pagination-lg">
+            <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item active"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+        <ul class="pagination pagination-sm">
+            <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item active"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+    </div>
+
+    <!-- TOOLTIPS-->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Tooltips">Tooltips</h5>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="I'm at top">Button 1</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="I'm at Bottom">Button 2</button>
+        <button type="button" class="btnthree btn btn-primary" data-toggle="tooltip" data-placement="left" data-html="true" title="I'm at <b>Left</b>">Button 3</button>
+    </div>
+
+    <!-- POPOVERS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Popovers">Popovers</h5>
+        <button class="btn btn-info" data-toggle="popover" data-placement="top" title="Top Pop" data-content="And here's some amazing content">Button 1</button>
+        <button class="btn btn-info" data-toggle="popover" data-placement="bottom" title="Bottom Pop" data-content="And here's some amazing content">Button 2</button>
+        <button class="popthree btn btn-info" data-toggle="popover" data-placement="left" title="Left Pop" data-content="And here's some amazing content">Button 3</button>
+    </div>
+
+    <!-- TOAST -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Toasts">Toasts</h5>
+        <div class="toastelem toast">
+            <div class="toast-header"><strong>Hello</strong><button class="close ml-auto" data-dismiss="toast">&times;</button></div>
+            <div class="toast-body">Toast Body</div>
+        </div>
+        <div class="toastelem toast">
+            <div class="toast-header"><strong>1 new message</strong><button class="close ml-auto" data-dismiss="toast">&times;</button></div>
+            <div class="toast-body">Multiple Toasts are stacked vertically</div>
+        </div>
+    </div>
+
+    <!-- JUMBOTRON -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Jumbotrons">Jumbotron</h5>
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+
+        <h6 class="mt-0 mb-3">Fluid Jumbotron</h6>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEDIA OBJECT -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Media-Objects">Media Object</h5>
+        <div class="media">
+            <img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+            <div class="media-body">
+                <h6 class="mt-0">Header</h6>
+                <p>This is media object</p>
+            </div>
+        </div>
+
+        <h6 class="mt-3 mb-3">Nested Media Objects</h6>
+        <div class="media">
+            <img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+            <div class="media-body">
+                <h6 class="mt-0">Header Parent</h6>
+                <p>This is parent media object</p>
+                <div class="media">
+                    <img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+                    <div class="media-body">
+                        <h6 class="mt-0">Header Child</h6>
+                        <p>This is child media object</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3 mb-3">Media List</h6>
+        <ul class="list-unstyled">
+            <li class="media"><img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+                <div class="media-body">
+                    <h6 class="mt-0">List Header</h6>
+                    <p>This is list media object 1</p>
+                </div>
+            </li>
+            <li class="media"><img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+                <div class="media-body">
+                    <h6 class="mt-0">List Header</h6>
+                    <p>This is list media object 2</p>
+                </div>
+            </li>
+            <li class="media"><img src="img/img1.jpg" class="mr-3 rounded" alt="fyre" width="64" height="64">
+                <div class="media-body">
+                    <h6 class="mt-0">List Header</h6>
+                    <p>This is list media object 3</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- LIST GROUP -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="List-Groups">List Group</h5>
+        <ul class="list-group list-group-flush">
+            <button class="list-group-item active list-group-item-action">One</button>
+            <button class="list-group-item list-group-item-action">Two</button>
+            <button class="list-group-item list-group-item-action">Three</button>
+        </ul>
+
+        <h6 class="mb-3 mt-3">Horizontal List group</h6>
+        <ul class="list-group list-group-horizontal-sm mt-2">
+            <li class="list-group-item list-group-item-success flex-fill">One <span class="badge badge-info ml-auto">25</span></li>
+            <li class="list-group-item list-group-item-warning flex-fill">Two</li>
+            <li class="list-group-item list-group-item-danger flex-fill">Three</li>
+        </ul>
+
+        <h6 class="mt-3 mb-3">Tabbed List group</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 list-group mt-2">
+                    <a href="#home" class="list-group-item list-group-item-action active" data-toggle="list">Home</a>
+                    <a href="#profile" class="list-group-item list-group-item-action" data-toggle="list">Profile</a>
+                    <a href="#contact" class="list-group-item list-group-item-action" data-toggle="list">Contact</a>
+                </div>
+                <div class="col-md-10 tab-content mt-2">
+                    <div class="tab-pane active fade show" id="home">Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation fugiat tempor
+                        sunt nisi aliqua fugiat proident ea ut.</div>
+                    <div class="tab-pane fade" id="profile">Mollit voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur exercitation id ut Anim ad
+                        Lorem aliqua in cupidatat nisi enim eu nostrud do.</div>
+                    <div class="tab-pane fade" id="contact">Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat
+                        nisi enim eu nostrud do aliquip veniam minim.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLLSPY -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Scrollspy">Scrollspy</h5>
+        <nav id="spyNav1" class="navbar navbar-light bg-light mb-2">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="#spy1" class="nav-link active">Item 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#spy2" class="nav-link">Item 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#spy3" class="nav-link">Item 3</a>
+                </li>
+            </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#spyNav1" class="border border-light" style="height: 200px; overflow-y: scroll; position: relative;">
+            <h6 id="spy1">Item 1</h6>
+            <p class="text-justify">
+                Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah
+                oat cake. Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer
+                danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.Gummies powder dessert bear
+                claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer.Topping candy canes caramels
+                cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Jelly beans liquorice danish
+                halvah oat cake. Gummies powder dessert bear claw soufflé. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Jelly beans
+                liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé.
+            </p>
+            <h6 id="spy2">Item 2</h6>
+            <p class="text-justify">
+                Macaroon tiramisu wafer jelly beans pastry oat cake liquorice sesame snaps. Pastry cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy tart
+                cotton candy tootsie roll cheesecake sugar plum sesame snaps pie sweetroll. Soufflé lemon drops danish danish pudding chocolate cake. Tiramisu lemon gingerbread.
+                Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin.
+                Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop
+                sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat
+                cake.Gummies powder dessert bear claw soufflé. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Tiramisu lemon drops
+                gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame
+                snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé.
+            </p>
+            <h6 id="spy3">Item 3</h6>
+            <p class="text-justify">
+                Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding. Gingerbread jelly beans oat cake dragée topping
+                brownie gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry sesame snaps. Pastry cheesecake drops ice cream.
+            </p>
+        </div>
+
+        <h6 class="mb-3 mt-3">Nested Scrollspy</h6>
+        <div class="row">
+            <div class="col-sm-3">
+                <nav id="spyNav2" class="navbar navbar-light bg-light mb-3 mb-sm-0">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+            <div class="col-sm-9">
+                <div data-spy="scroll" data-target="#spyNav2" class="border border-light" style="height: 350px; overflow-y: scroll; position: relative;">
+                    <h6 id="item-1">Item 1</h6>
+                    <p class="text-justify">
+                        Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.
+                        Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish
+                        wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert
+                        bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer.
+                    </p>
+                    <h6 id="item-1-1">Item 1-1</h6>
+                    <p class="text-justify">
+                        Macaroon tiramisu wafer jelly beans pastry oat cake liquorice sesame snaps. Pastry cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy
+                        tart cotton candy tootsie roll cheesecake sugar plum sesame snaps pie sweetroll. Soufflé lemon drops danish danish pudding chocolate cake. Tiramisu lemon
+                        drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops
+                        pudding sesamesnaps muffin.
+                    </p>
+                    <h6 id="item-1-2">Item 1-2</h6>
+                    <p class="text-justify">
+                        Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding. Gingerbread jelly beans oat cake dragée topping brownie
+                        gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry sesame snaps. Pastry cheesecake drops ice cream.
+                    </p>
+                    <h6 id="item-2">Item 2</h6>
+                    <p class="text-justify">
+                        Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.
+                        Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish
+                        wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert
+                        bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer.
+                    </p>
+                    <h6 id="item-3">Item 3</h6>
+                    <p class="text-justify">
+                        Macaroon tiramisu wafer jelly beans pastry oat cake liquorice sesame snaps. Pastry cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy
+                        tart cotton candy tootsie roll cheesecake sugar plum sesame snaps pie sweetroll. Soufflé lemon drops danish danish pudding chocolate cake. Tiramisu lemon
+                        drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops
+                        pudding sesame snaps muffin.
+                    </p>
+                    <h6 id="item-3-1">Item 3-1</h6>
+                    <p class="text-justify">
+                        Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding. Gingerbread jelly beans oat cake dragée topping brownie
+                        gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry sesame snaps. Pastry cheesecake drops ice cream.
+                    </p>
+                    <h6 id="item-3-2">Item 3-2</h6>
+                    <p class="text-justify">
+                        Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.
+                        Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mb-3 mt-3">List Scrollspy</h6>
+        <div class="row">
+            <div class="col-sm-3">
+                <div id="spyList" class="list-group mb-4">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div data-spy="scroll" data-target="#spyList" class="border border-light" style="height: 200px; overflow-y: scroll; position: relative;">
+                    <h6 id="list-item-1">Item 1</h6>
+                    <p class="text-justify">
+                        Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.
+                        Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish
+                        wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.Gummies powder dessert bear
+                        claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer.Topping candy canes
+                        caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Jelly beans
+                        liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw
+                        soufflé. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé.
+                    </p>
+                    <h6 id="list-item-2">Item 2</h6>
+                    <p class="text-justify">
+                        Macaroon tiramisu wafer jelly beans pastry oat cake liquorice sesame snaps. Pastry cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy
+                        tart cotton candy tootsie roll cheesecake sugar plum sesame snaps pie sweetroll. Soufflé lemon drops danish danish pudding chocolate cake. Tiramisu lemon
+                        drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops
+                        pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake. Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer
+                        oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps
+                        muffin. Jelly beans liquorice danish halvah oat cake.Gummies powder dessert bear claw soufflé. Jelly beans liquorice danish halvah oat cake. Gummies powder
+                        dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat sweet roll donut sweet. Lollipop sweet halvah.Candy canes wafer danish wafer. Topping
+                        candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice danish halvah oat cake.
+                    </p>
+                    <h6 id="list-item-3">Item 3</h6>
+                    <p class="text-justify">
+                        Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding. Gingerbread jelly beans oat cake dragée topping brownie
+                        gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry sesame snaps. Pastry cheesecake drops ice cream.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DROPDOWN -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Dropdowns">Dropdowns</h5>
+        <div class="btn-group dropright">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-offset="10,10">Classic</button>
+            <div class="dropdown-menu">
+                <span class="dropdown-item-text">Unclickable Text</span>
+                <span class="dropdown-header">Item List</span>
+                <a href="#" class="dropdown-item active">Item 1</a>
+                <a href="#" class="dropdown-item">Item 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Item 3</a>
+            </div>
+        </div>
+
+        <div class="btn-group dropup">
+            <button class="btn btn-success">Split</button>
+            <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Item 1</a>
+                <a href="#" class="dropdown-item">Item 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Item 3</a>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-info">Responsive</button>
+            <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" data-display="static"></button>
+            <div class="dropdown-menu dropdown-menu-lg-right">
+                <a href="#" class="dropdown-item">Item 1</a>
+                <a href="#" class="dropdown-item">Item 2</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Item 3</a>
+            </div>
+        </div>
+
+
+        <div class="enclose mt-2">
+            <div class="btn-group">
+                <button class="btn btn-danger">Reference</button>
+                <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" data-reference="parent"></button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Item 1</a>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-offset="0,10">Form</button>
+                <div class="dropdown-menu">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="drpMail">Email address</label>
+                            <input type="email" class="form-control" id="drpMail" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="drpPass">Password</label>
+                            <input type="password" class="form-control" id="drpPass" placeholder="password">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="drpChk">
+                            <label class="form-check-label" for="drpChk">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COLLAPSE -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Collapse">Collapse</h5>
+        <a class="btn btn-info" href="#someDiv" data-toggle="collapse">Link Collapse</a>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#someDiv">Button Collapse</button>
+        <div class="collapse" id="someDiv">I'm Collapsed DIV</div>
+
+        <button data-target=".myDiv" class="btn btn-danger" data-toggle="collapse">Multi Collapse</button>
+        <div class="myDiv collapse">
+            <div id="div1">I'm First DIV</div>
+            <div id="div2">I'm Second DIV</div>
+        </div>
+
+        <h6 class="mt-4 mb-4">Accordion</h6>
+        <div class="accordion" id="accn">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#para1">Link 1</button>
+                </div>
+                <div class="collapse show" id="para1" data-parent="#accn">
+                    <div class="card-body">
+                        <p>This is Link 1 content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#para2">Link 2</button>
+                </div>
+                <div class="collapse" id="para2" data-parent="#accn">
+                    <div class="card-body">
+                        <p>This is Link 2 content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#para3">Link 3</button>
+                </div>
+                <div class="collapse" id="para3" data-parent="#accn">
+                    <div class="card-body">
+                        <p>This is Link 3 content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Modals">Modals</h5>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Default</button>
+        <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Sample Modal</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is my Sample Modal and it works!!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Centered</button>
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Centered Modal</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This Modal is vertically centered!!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Scrollable</button>
+        <div class="modal fade" id="myModal3">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Scrollable Modal</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-justify">Candy canes wafer danish wafer. Topping candy canes caramels cookie lemon drops pudding sesame snaps muffin. Jelly beans liquorice
+                            danish halvah oat cake. Gummies powder dessert bear claw soufflé. Tiramisu lemon drops gingerbread. Wafer oat cake pudding gingerbread jujubes sweet
+                            roll donut sweet. Lollipop sweet bonbon halvah. Lemon drops gummi bears cake cake cake sesame snaps chocolate bar chupa chups tart. Cake cookie
+                            cheesecake. Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding. Gingerbread jelly beans oat cake dragée
+                            topping brownie gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry oat cake liquorice sesame snaps.Pastry
+                            cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy tart cotton candy tootsie roll cheesecake sugar plum sesame snaps pie sweet
+                            roll. Soufflé fruitcake sweet roll lemon drops danish danish pudding chocolate cake. Dragée sweet sugar plum halvah cupcake. Caramels powder dragée.
+                            Cotton candy cake cake candy canes jelly-o liquorice bear claw. Croissant dessert muffin liquorice. Tootsie roll marzipan cotton candy topping chupa
+                            chups bonbon. Oat cake gummy bears cake candy tiramisu. Pudding brownie bear claw muffin chocolate cake candy canes cake. Candy canes tootsie roll candy
+                            canes soufflé cake. Sesame snaps danish bonbon chocolate bar biscuit pie cheesecake donut cheesecake.Lemon drops gummi bears cake cake cake sesame snaps
+                            chocolate bar chupa chups tart.Cake cookie cheesecake. Lollipop pudding lemon drops lemon drops gingerbread chocolate cake marzipan bear claw pudding.
+                            Gingerbread jelly beans oat cake dragée topping brownie gummi bears. Chocolate bar apple pie muffin cupcake. Macaroon tiramisu wafer jelly beans pastry
+                            oat cake liquorice sesame snaps. Pastry cheesecake pastry lemon drops ice cream. Jelly-o jelly croissant. Candy tart cotton candy tootsie roll
+                            cheesecake sugar plum sesame snaps pie sweet roll. Soufflé fruitcake sweet roll lemon drops danish danish pudding chocolate cake. Dragée sweet sugar
+                            plum halvah cupcake. Caramels powder dragée. Cotton candy cake cake candy canes jelly-o liquorice bear claw. Croissant dessert muffin liquorice. Tootsie
+                            roll marzipan cotton candy topping chupa chups bonbon. Oat cake gummi bears cake candy tiramisu. Pudding brownie bear claw muffin chocolate cake candy
+                            canes cake. Candy canes tootsie roll candy canes soufflé cake. Sesame snaps danish bonbon chocolate bar biscuit pie cheesecake donut cheesecake.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <h6 class="mt-3 mb-3">Dynamic Modal</h6>
+        <button class="btn btn-info" data-toggle="modal" data-target="#myModal4" data-text="From Button 1">Button 1</button>
+        <button class="btn btn-info" data-toggle="modal" data-target="#myModal4" data-text="From Button 2">Button 2</button>
+        <button class="btn btn-info" data-toggle="modal" data-target="#myModal4" data-text="From Button 3">Button 3</button>
+        <div class="modal fade" id="myModal4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Dynamic Modal</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <h6 class="mt-3 mb-3">Embedded Modal</h6>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#myModal5" data-text="From Button 1">Youtube</button>
+        <div class="modal fade" id="myModal5">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">
+                            <h5>Youtube Modal</h5>
+                        </div>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body embed-responsive embed-responsive-16by9" style="height: 400px">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9cKsq14Kfsw" style="width: 100%; height: 100%" allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Cards">Cards</h5>
+        <div class="row no-gutters justify-content-between">
+            <div class="card col-md-3 mb-3">
+                <img src="img/img1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                    <p class="card-text">This is sample text</p>
+                    <a href="#" class="card-link">link</a>
+                </div>
+            </div>
+
+            <div class="card col-md-3 mb-3">
+                <h5 class="card-header text-center">Card List</h5>
+                <img src="img/img1.jpg" class="card-img-top">
+                <ul class="list-group list-group-flush">
+                    <li href="#" class="list-group-item">Card Item 1</li>
+                    <li href="#" class="list-group-item">Card Item 2</li>
+                    <li href="#" class="list-group-item">Card Item 3</li>
+                </ul>
+                <div class="card-footer text-center">3 items</div>
+            </div>
+
+            <div class="card col-md-3 mb-3">
+                <img src="img/img1.jpg" class="card-img" style="height: 382px;">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Card Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                    <p class="card-text">This is sample text</p>
+                </div>
+            </div>
+        </div>
+
+        <h6>Responsive Card</h6>
+        <div class="card mt-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/profile.png" class="card-img">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3">Card Group</h6>
+        <div class="row no-gutters">
+            <div class="card-group mt-3">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3">Card Deck</h6>
+        <div class="row no-gutters">
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3">Card Columns</h6>
+        <div class="row no-gutters">
+            <div class="card-columns mt-3">
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card p-4">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <blockquote class="blockquote mb-0 card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                </div>
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">This is sample text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="mt-3 mb-4">Tabbed Cards</h6>
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#item1">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#item2">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#item3">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="item1">
+                        <h6 class="card-title">Header</h6>
+                        <p class="card-text">This is Link 1 Content</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="tab-pane fade" id="item2">
+                        <h6 class="card-title">Header</h6>
+                        <p class="card-text">This is Link 2 Content</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="tab-pane fade" id="item3">
+                        <h6 class="card-title">Header</h6>
+                        <p class="card-text">This is Link 3 Content</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Forms">Forms</h5>
+        <h6 class="mb-3">Default Form Elements</h6>
+        <form class="myForm" novalidate>
+            <div class="form-group">
+                <label for="myMail">E-Mail</label>
+                <input type="email" class="form-control" id="myMail" placeholder="mail@example.com" required>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter proper mail address!</div>
+            </div>
+            <div class="form-group">
+                <label for="myPass">Password</label>
+                <input type="password" class="form-control" id="myPass" placeholder="password" required>
+                <small class="form-text text-muted">Must be 8-20 characters long.</small>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter password!</div>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="myChk" value="" required>
+                <label for="myChk" class="form-check-label">Check here!!</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="myRad" value="">
+                <label for="myRad" class="form-check-label">Radio me!!</label>
+            </div>
+            <div class="form-group mt-3">
+                <input type="file" class="form-control-file">
+            </div>
+            <div class="form-group">
+                <label for="mySel" class="col-form-label-lg">Select</label>
+                <select class="form-control form-control-lg" id="mySel">
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="myMsel" class="col-form-label-sm">Multi Select</label>
+                <select multiple class="form-control form-control-sm" id="myMsel" required>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
+            </div>
+            <div class="addr-helper form-group">
+                <label for="myText">Address</label>
+                <textarea class="form-control" rows="3" required></textarea>
+                <div class="valid-tooltip">Looks good!</div>
+                <div class="invalid-tooltip">Please enter Address!</div>
+            </div>
+            <div class="form-group">
+                <label for="myRead">Readonly Text</label>
+                <input type="text" class="form-control-plaintext" value="This is readonly text without form styling" readonly>
+            </div>
+            <div class="form-group">
+                <label for="myRng">Range input</label>
+                <input type="range" class="form-control-range" id="myRng">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="myTerms" class="form-check-input" value="" required>
+                <label for="myTerms" class="form-check-label">Accept terms and conditions?</label>
+                <div class="invalid-feedback">Please accept terms and conditions before submitting..</div>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">Submit</button>
+        </form>
+
+        <h6 class="mt-4 mb-2">Custom Form Elements</h6>
+        <form class="cusForm">
+            <div class="custom-control custom-checkbox custom-control-inline mt-3">
+                <input type="checkbox" class="custom-control-input" id="myCusCheck" value="">
+                <label for="myCusCheck" class="custom-control-label">Check out!!</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" name="customRadio" class="custom-control-input" id="myCusRadio1">
+                <label for="myCusRadio1" class="custom-control-label">Radio in!!</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" name="customRadio" class="custom-control-input" id="myCusRadio2">
+                <label for="myCusRadio2" class="custom-control-label">Radio out!!</label>
+            </div>
+            <div class="custom-control custom-switch custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="myCusSwitch">
+                <label for="myCusSwitch" class="custom-control-label">Switch Me!!</label>
+            </div>
+            <select class="custom-select ml-0 p-0 mt-3">
+                <option selected>Open menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select multiple class="custom-select mt-3">
+                <option selected value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="myCusRng" class="mt-3">Range input</label>
+            <input type="range" class="custom-range" id="myCusRng">
+            <div class="custom-file mt-3">
+                <input type="file" class="custom-file-input" id="myCusFile">
+                <label for="myCusFile" class="custom-file-label">Choose file</label>
+            </div>
+            <div class="form-group mt-3">
+                <label for="myDefTxt">Validation Text</label>
+                <input class="form-control" id="myDefTxt" type="text" placeholder="submit form to see custom validation message" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- INPUT GROUPS-->
+    <div class="container">
+        <hr>
+        <h5 class="mb-4" id="Input-Groups">Input Groups</h5>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control" placeholder="username">
+        </div>
+
+        <div class="input-group mt-3">
+            <input type="text" class="form-control" placeholder="username">
+            <div class="input-group-append">
+                <div class="input-group-text">@example.com</div>
+            </div>
+        </div>
+
+        <div class="input-group input-group-sm mt-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input mt-1" id="inChk">
+                        <label for="inChk" class="form-check-label">Check it!!</label>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input mt-1" id="inRad">
+                        <label for="inRad" class="form-check-label">Radio!!</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+                <div class="input-group-text">0.00</div>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary">Button 1</button>
+                <button class="btn btn-outline-secondary">Button 2</button>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Dropdown</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Link 1</a>
+                    <a href="#" class="dropdown-item">Link 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Link 3</a>
+                </div>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <button class="btn btn-secondary">Button</button>
+                <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Link 1</a>
+                    <a href="#" class="dropdown-item">Link 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Link 3</a>
+                </div>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mt-3">
+            <select class="custom-select">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <div class="input-group-append">
+                <div class="input-group-text">Options</div>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Upload</div>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="myInFile">
+                <label class="custom-file-label" for="myInFile">Choose file</label>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
