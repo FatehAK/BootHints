@@ -87,12 +87,12 @@ const myIds = [
 
 const comp = document.querySelector('.component');
 
-for (let i = 0; i < 21; i++) {
+for (let str of myIds) {
     const list = document.createElement('li');
     const anchor = document.createElement('a');
     anchor.classList.add('link-style');
-    myIds[i] = myIds[i].replace('-', ' ');
-    anchor.innerHTML = myIds[i];
+    str = str.replace('-', ' ');
+    anchor.innerHTML = str;
     list.appendChild(anchor);
     comp.appendChild(list);
 }
