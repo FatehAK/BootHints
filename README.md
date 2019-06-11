@@ -19,7 +19,7 @@ A total of 23 components are covered including -
   * Popovers
   * Toasts
   * Jumbotrons
-  * Media Object
+  * Media Objects
   * List Groups
   * Scrollspy
   * Dropdown
