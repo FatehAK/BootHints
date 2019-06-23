@@ -1,5 +1,5 @@
 # Boothints
-A visual reference guide made by me to all of components of the responsive bootstrap library. All the components are reusable in nature so we can include them easily in other projects
+A visual reference guide made by me to all of components of the responsive bootstrap library. All the components are reusable in nature so we can include them easily in other projects.
 
 You can view it at - https://boothints.netlify.com
 
