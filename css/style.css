@@ -2,19 +2,19 @@
     max-width: 500px;
 }
 
-/* for validation-tooltip to work*/
+/* for validation-tooltip to work */
 .addr-helper {
     position: relative;
 }
 
 .header {
-    color: rgb(131, 131, 131);
+    color: #838383;
     letter-spacing: 0.1em;
     font-weight: bold;
 }
 
 .index {
-    color: rgb(255, 91, 91);
+    color: #ff5b5b;
     letter-spacing: 0.05em;
     font-weight: bolder;
 }
@@ -25,11 +25,11 @@
     list-style-type: none;
     padding: 10px 10px;
     font-size: 1em;
-    border-bottom: 0.5px dashed rgb(255, 93, 93);
+    border-bottom: 0.5px dashed #ff5d5d;
 }
 
 .link-style:hover {
-    background: #e6e6e686;
+    background: rgba(230, 230, 230, 0.525);
 }
 
 .link-style::before {
@@ -46,6 +46,6 @@
     height: 50px;
     border-radius: 25px;
     font-weight: bolder;
-    background: hsla(0, 100%, 66%, 0.959);
-    color: white;
+    background: rgba(255, 81, 81, 0.959);
+    color: #fff;
 }
